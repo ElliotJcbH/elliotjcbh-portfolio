@@ -1,0 +1,13 @@
+
+:root {
+    --background-color: white;
+    --primary-text-color: black;
+    --secondary-text-color: #5e5c5c;
+
+    /* --background-color: #141414;
+    --primary-text-color: #8a8a8a;
+    --secondary-text-color: #6e6b6b; */
+
+    --serif-font: "Playfair Display", serif;
+    --sans-serif-font: "General Sans", sans-serif;
+}

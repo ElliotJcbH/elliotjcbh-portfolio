@@ -4,27 +4,216 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elliot Halili</title>
-    <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/scrollable.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,401,500,501,600,601&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
+    <div id="main-container">
+        <section id="personal-info">
+            <div class="wrapper">
+                <!-- <nav>
+                    <ul class="nav-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Certificates</a></li>
+                    </ul>
+                </nav> -->
+                <div id="main-content">
+                    <h1>Elliot Halili</h1>
+                    <h2>IT Student</h2>
+                    <p>
+                        <i>"Opportunities don't happen, you create them."</i>
+                        <br />
+                        <span>- Chris Grosser</span>
+                    </p>
+                </div>
+                <div id="links">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <svg style="--hover-text-color: #0077B5" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 11v5" /><path d="M8 8v.01" /><path d="M12 16v-5" /><path d="M16 16v-3a2 2 0 1 0 -4 0" /><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" /></svg>
+                            <!-- <a href="#" style="--hover-text-color: #0077B5">LinkedIn</a> -->
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg style="--hover-text-color: #9D00FF" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" /></svg>
+                            <!-- <a href="#" style="--hover-text-color: #9D00FF">GitHub</a> -->
+                            </a>
+                        </li>
+                        <li>
+                            <!-- <a href="#" style="--hover-text-color: #1DA1F2">Twitter</a></li> -->
+                            <a href="#">
+                                <svg style="--hover-text-color: #1DA1F2" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-twitter"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z" /></svg>
+                            </a>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="scroll-container">
+            <nav id="scrollable-nav">
+                <ul class="nav-links">
+                    <li><a href="#about-container">About</a></li>
+                    <li><a href="#career-container">Career</a></li>
+                    <li><a href="#project-container">Projects</a></li>
+                    <!-- <li><a href="#">Certificates</a></li> -->
+                </ul>
+            </nav>
+            <div id="scrollable">
+                <div id="about-container">
+                    <p>
+                        Hello! I'm Elliot Halili, currently undergoing the fourth and final year of my BSIT program at 
+                        Our Lady of Fatima University - Antipolo. Throughout my academic journey, I've cultivated a strong passion 
+                        for software development, from which I've been able to gain skills in some front-end and back-end technologies, 
+                        as well as UI/UX design.
+                    </p>
+                    <p>
+                        I already have a few projects under my belt and have gained valuable
+                        experience at the cost of hard work and a myriad of mistakes. I'm constantly seeking to improve my skills and expand my knowledge in the ever-evolving field of technology.
+                        I'm excited to see where my passion for software development will take me in the future!
+                    </p>
+                </div>
+                <div id="career-container">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-history"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 8l0 4l2 2" /><path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5" /></svg>
+                        <h1>Career</h1>
+                    </div>
+                </div>
+                <div id="project-container">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-pencil-bolt"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" /><path d="M13.5 6.5l4 4" /><path d="M19 16l-2 3h4l-2 3" /></svg>
+                        <h1>Projects</h1>
+                    </div>
+                    <button class="project-card">
+                        <div>
+                            <div class="project-header">
+                                <h1>My Portfolio</h1>
+                                <p>Personal</p>
+                            </div>
+                            <p>
+                                My personal portfolio which you are viewing right now! Built to showcase my skills, experiences, and projects.
+                            </p>
+                            <div class="stack-list">
+                                <div class="stack-tag">HTML</div>
+                                <span class="stack-divider">-</span>
+                                <div class="stack-tag">CSS</div>
+                                <span class="stack-divider">-</span>
+                                <div class="stack-tag">Javascript</div>
+                            </div>
+                        </div>
+                        <!-- <img src="" /> -->
+                    </button>
+                    <button class="project-card">
+                        <div>
+                            <div class="project-header">
+                                <h1>Atletik</h1>
+                                <p>Capstone</p>
+                            </div>
+                            <p>
+                                Atletik is a mobile application with basic social media features built for following
+                                local sports events and games live.
+                            </p>
+                            <div class="stack-list">
+                                <div class="stack-tag">React Native</div>
+                                <span class="stack-divider">-</span>
+                                <div>Expo</div>
+                                <span class="stack-divider">-</span>
+                                <div>Node</div>
+                                <span class="stack-divider">-</span>
+                                <div class="stack-tag">Typescript</div>
+                                <span class="stack-divider">-</span>
+                                <div class="stack-tag">PostgreSQL</div>
+                                <span class="stack-divider">-</span>
+                                <div class="stack-tag">Supabase</div>
+                            </div>
+                        </div>
+                        <!-- <img src="" /> -->
+                    </button>
+                    <button class="project-card">
+                        <div>
+                            <div class="project-header">
+                                <h1>Juria's Garden Hotel</h1>
+                                <p>School Project</p>
+                            </div>
+                            <p>
+                                Juria's Garden Hotel is a hotel booking web application that allows users to book rooms,
+                                view room details, and manage their bookings.
+                            </p>
+                            <div class="stack-list">
+                                <div class="stack-tag">Svelte</div>
+                                <span class="stack-divider">-</span>
+                                <div class="stack-tag">Javascript</div>
+                                <span class="stack-divider">-</span>
+                                <div>HTML</div>
+                                <span class="stack-divider">-</span>
+                                <div>SCSS</div>
+                                <span class="stack-divider">-</span>
+                                <div class="stack-tag">PostgreSQL</div>
+                                <span class="stack-divider">-</span>
+                                <div class="stack-tag">Supabase</div>
+                            </div>
+                        </div>
+                    </button>
+                      <button class="project-card">
+                        <div>
+                            <div class="project-header">
+                                <h1>Luxuria</h1>
+                                <p>School Project</p>
+                            </div>
+                            <p>
+                                Luxuria is an e-commerece web application specifically made for jewelry products.
+                                This web application was our first attempt at creating a fully operational CRUD.
+                            </p>
+                            <div class="stack-list">
+                                <div class="stack-tag">Svelte</div>
+                                <span class="stack-divider">-</span>
+                                <div class="stack-tag">Javascript</div>
+                                <span class="stack-divider">-</span>
+                                <div>HTML</div>
+                                <span class="stack-divider">-</span>
+                                <div>SCSS</div>
+                                <span class="stack-divider">-</span>
+                                <div class="stack-tag">PostgreSQL</div>
+                                <span class="stack-divider">-</span>
+                                <div class="stack-tag">Supabase</div>
+                            </div>
+                        </div>
+                    </button>
+                     <button class="project-card">
+                        <div>
+                            <div class="project-header">
+                                <h1>Katapusan</h1>
+                                <p>Collaborative</p>
+                            </div>
+                            <p>
+                                Katapusan is an interactive shortfilm heavily based on the interactivity features of 
+                                works such as Black Mirror: Bandersnatch. Users can make choices that affect the storyline
+                                and outcome of the film.
+                            </p>
+                            <div class="stack-list">
+                                <div class="stack-tag">React</div>
+                                <span class="stack-divider">-</span>
+                                <div class="stack-tag">Javascript</div>
+                                <span class="stack-divider">-</span>
+                                <div class="stack-tag">CSS</div>
+                            </div>
+                        </div>
+                        <!-- <img src="" /> -->
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- <section id="projects">
         <div class="wrapper">
-            <!-- <div class="logo">Elliot Halili</div> -->
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+            <h1>Projects</h1>
         </div>
-    </nav>
-    <section id="hero">
-        <div class="wrapper">
-
-        </div>
-    </section>
-    <section>
-
-    </section>
+    </section> -->
 </body>
 </html>
