@@ -1,0 +1,63 @@
+
+#project-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5; 
+    z-index: 9999;
+    background: var(--background-color);
+    /* background: red; */
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+    padding: 1.5rem 1rem;
+    overflow-y: auto;
+    transform: translateY(20px);
+    
+    &, & * {
+        transition: all 0.75s ease-in-out;
+    }
+
+    & .wrapper {
+        max-width: 1000px;
+    }
+
+    &.showing {
+        visibility: visible;
+        pointer-events: all;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    & #modal-thumbnail-container {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+        border-radius: 10px;
+    }
+
+    & div {
+        margin-block: 1.25rem !important;
+    }
+
+    & h1 {
+        font-size: 2.5rem;
+        color: var(--primary-text-color);
+    }
+
+     & button {
+        position: fixed;
+        bottom: 0;
+        cursor: pointer;
+
+        & svg {
+            color: var(--primary-text-color);
+            width: 32px;
+            height: 32px;
+        }
+    }
+}

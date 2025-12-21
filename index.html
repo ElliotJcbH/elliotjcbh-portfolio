@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styles/hero.css">
     <link rel="stylesheet" href="styles/scrollable.css">
     <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/project.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
@@ -27,10 +29,10 @@
                 <div id="main-content">
                     <h1>Elliot Halili</h1>
                     <h2>IT Student</h2>
-                    <p>
+                    <!-- <p>
                         <i>"Opportunities don't happen, you create them."</i>
                         <span>- Chris Grosser</span>
-                    </p>
+                    </p> -->
                 </div>
                 <div id="links">
                     <ul>
@@ -62,66 +64,80 @@
             </div>
         </section>
         <section id="scroll-container">
-            <nav id="scrollable-nav">
-                <ul class="nav-links">
-                    <li><a href="#about-container">About</a></li>
-                    <li><a href="#career-container">Career</a></li>
-                    <li><a href="#project-container">Projects</a></li>
-                    <!-- <li><a href="#">Certificates</a></li> -->
-                </ul>
-            </nav>
-            <div id="scrollable">
-                <div id="about-container">
-                    <p>
-                        Hello! I'm Elliot Halili, currently undergoing the fourth and final year of my BSIT program at 
-                        Our Lady of Fatima University - Antipolo. Throughout my academic journey, I've cultivated a strong passion 
-                        for software development, from which I've been able to gain skills in some front-end and back-end technologies, 
-                        as well as UI/UX design.
-                    </p>
-                    <p>
-                        I already have a few projects under my belt and have gained valuable
-                        experience at the cost of hard work and a myriad of mistakes. I'm constantly seeking to improve my skills and expand my knowledge in the ever-evolving field of technology.
-                        I'm excited to see where my passion for software development will take me in the future!
-                    </p>
-                </div>
-                <div id="career-container">
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-history"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 8l0 4l2 2" /><path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5" /></svg>
-                        <h1>Career</h1>
+            <div class="wrapper">
+                <nav id="scrollable-nav">
+                    <ul class="nav-links">
+                        <li><a href="#about-container">About</a></li>
+                        <li><a href="#career-container">Career</a></li>
+                        <li><a href="#project-container">Projects</a></li>
+                        <!-- <li><a href="#">Certificates</a></li> -->
+                    </ul>
+                </nav>
+                <div id="scrollable">
+                    <div id="about-container">
+                        <p>
+                            Hello! I'm Elliot Halili, currently undergoing the fourth and final year of my BSIT program at 
+                            Our Lady of Fatima University - Antipolo. Throughout my academic journey, I've cultivated a strong passion 
+                            for software development, from which I've been able to gain skills in some front-end and back-end technologies, 
+                            as well as UI/UX design.
+                        </p>
+                        <p>
+                            I already have a few projects under my belt and have gained valuable
+                            experience at the cost of hard work and a myriad of mistakes. I'm constantly seeking to improve my skills and expand my knowledge in the ever-evolving field of technology.
+                            I'm excited to see where my passion for software development will take me in the future!
+                        </p>
                     </div>
-                </div>
-                <div id="project-container">
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-pencil-bolt"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" /><path d="M13.5 6.5l4 4" /><path d="M19 16l-2 3h4l-2 3" /></svg>
-                        <h1>Projects</h1>
-                    </div>
-                    <!-- <button class="project-card">
+                    <div id="career-container">
                         <div>
-                            <div class="project-header">
-                                <h1>My Portfolio</h1>
-                                <p>Personal</p>
-                            </div>
-                            <p>
-                                My personal portfolio which you are viewing right now! Built to showcase my skills, experiences, and projects.
-                            </p>
-                            <div class="stack-list">
-                                <div class="stack-tag">HTML</div>
-                                <span class="stack-divider">-</span>
-                                <div class="stack-tag">CSS</div>
-                                <span class="stack-divider">-</span>
-                                <div class="stack-tag">Javascript</div>
-                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-history"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 8l0 4l2 2" /><path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5" /></svg>
+                            <h1>Career</h1>
                         </div>
-                    </button> -->
+                    </div>
+                    <div id="project-container">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-pencil-bolt"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" /><path d="M13.5 6.5l4 4" /><path d="M19 16l-2 3h4l-2 3" /></svg>
+                            <h1>Projects</h1>
+                        </div>
+                        <!-- <button class="project-card">
+                            <div>
+                                <div class="project-header">
+                                    <h1>My Portfolio</h1>
+                                    <p>Personal</p>
+                                </div>
+                                <p>
+                                    My personal portfolio which you are viewing right now! Built to showcase my skills, experiences, and projects.
+                                </p>
+                                <div class="stack-list">
+                                    <div class="stack-tag">HTML</div>
+                                    <span class="stack-divider">-</span>
+                                    <div class="stack-tag">CSS</div>
+                                    <span class="stack-divider">-</span>
+                                    <div class="stack-tag">Javascript</div>
+                                </div>
+                            </div>
+                        </button> -->
+                    </div>
                 </div>
             </div>
         </section>
     </div>
-    <!-- <section id="projects">
+    <div id="project-modal">
         <div class="wrapper">
-            <h1>Projects</h1>
+            <!-- <div>
+                <button id="project-back-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M5 12l6 6" /><path d="M5 12l6 -6" /></svg>
+                </button>
+            </div> -->
+            <div id="modal-thumbnail-container">
+            </div>
+            <div>
+                <h1 id="project-title">Atletik</h1>
+            </div>
+            <button id="project-back-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M5 12l6 6" /><path d="M5 12l6 -6" /></svg>
+            </button>
         </div>
-    </section> -->
-    <script src="scripts/list-projects.js"></script>
+    </div>
+    <script type="module" src="scripts/list-projects.js"></script>
 </body>
 </html>

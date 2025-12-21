@@ -28,9 +28,15 @@ section {
     gap: 5.5rem;
     /* padding-top: 4rem; */
     margin-inline: auto;
+    transition: all 0.3s ease-in-out;
+
+    &.hidden {
+        opacity: 0;
+    }
 }
 
 .wrapper {
+    position: relative;
     width: 100%;
     max-width: 1200px;
     margin-inline: auto;

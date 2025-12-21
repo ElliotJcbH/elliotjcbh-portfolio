@@ -14,7 +14,6 @@
     align-items: flex-end;
     justify-content: flex-end;
     padding-block: 1.75rem; 
-    margin-bottom: 2rem;
     border-bottom: 1px solid var(--secondary-text-color);
     background-color: var(--background-color);
     z-index: 999;
@@ -34,9 +33,11 @@
 }
 
 #scrollable {
-    padding-inline: 0.75rem; 
+    position: relative;
+    overflow: hidden;
+    /* padding-inline: 0.75rem;  */
 
-    & > div > div:has(h1) {
+    & > div:not(#project-modal) > div:has(h1) {
         display: flex;
         flex-flow: row nowrap;
         /* justify-content: space-between; */
@@ -64,6 +65,7 @@
 #about-container {
     width: 100%;
     height: min-content;
+    margin-top: 2rem;
     /* background-color: var(--primary-text-color); */
     /* padding: 1.15rem 1.15rem; */
     border-radius: 10px;
@@ -93,7 +95,7 @@
 
     & .project-card {
         width: 100%;
-        display: flex;
+        display: flexbox;
         flex-flow: row nowrap;
         gap: 1rem; 
         margin-bottom: 3.25rem;
@@ -119,6 +121,7 @@
         }
 
         & .project-header {
+            width: 100%;
             display: flex;
             flex-flow: row nowrap;
             justify-content: space-between;

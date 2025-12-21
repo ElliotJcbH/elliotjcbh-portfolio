@@ -29,7 +29,8 @@
 
 div#main-content {
     max-width: 800px;
-    display: flex;
+    width: 100%;
+    display: flexbox;
     flex: 1;
     flex-flow: column nowrap;
     align-items: flex-start;
@@ -160,5 +161,6 @@ button#cta {
         stroke-width: 1.75px;
         transform: translateX(20px);
         opacity: 0;
+        /* transition: 0.5s cubic-bezier(.67,-0.21,.6,1.78); */
     }
 }
