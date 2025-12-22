@@ -76,8 +76,8 @@
         flex-flow: column wrap;
         justify-content: center;
         align-items: space-between;
-        gap: 1.25rem;
-        margin-block: 1.25rem 1.75rem;
+        gap: 0.5rem;
+        margin-block: 1rem 1.75rem;
 
         & #project-modal-actions {
             display: flex;
