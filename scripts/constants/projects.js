@@ -33,7 +33,7 @@ const projects = [
     },
     {
         title: "Juria's Garden Hotel",
-        date: "2024-2025",
+        date: "2024 - 2025",
         classification: "School Project",
         description: "Juria's Garden Hotel is a hotel booking web application that allows users to book rooms, view room details, and manage their bookings.",
         thumbnail: "",
