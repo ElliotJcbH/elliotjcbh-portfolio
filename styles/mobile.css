@@ -11,6 +11,7 @@
     
     #main-container {
         flex-direction: column;
+        gap: 2rem;
         /* padding-inline: 0.25rem; */
     }
 
