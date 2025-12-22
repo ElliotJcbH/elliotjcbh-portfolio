@@ -57,6 +57,7 @@ const projects = [
         stack: ["React", "Javascript", "CSS"],
         about: [
             "Katapusan is an interactive short film heavily based on the interactivity features of works such as Black Mirror: Bandersnatch. Users can make choices that affect the storyline and outcome of the film.",
+            "I worked mostly on the frontend of this project, while my fellow collaborator handled everything on the backend with AWS. I was not able to dedicate a lot of my time to this due to other commitments, but I was able to contribute to modules such as the home page, the video player, and the interactive elements."
         ]
     }
 ]
