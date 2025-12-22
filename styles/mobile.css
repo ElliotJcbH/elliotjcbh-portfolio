@@ -11,7 +11,7 @@
     
     #main-container {
         flex-direction: column;
-        gap: 2rem;
+        gap: 1rem;
         /* padding-inline: 0.25rem; */
     }
 
@@ -33,6 +33,18 @@
         height: 100dvh;
         display: block;
         padding-block: 1rem;
+    }
+
+    #links {
+        margin-top: 2rem !important;
+
+        & ul {
+            gap: 1.5rem !important;
+        }
+    }
+
+    #cta {
+        margin-top: 0.75rem !important;
     }
 
     #scroll-container {
@@ -64,7 +76,7 @@
      & .carousell {
 
         & img {
-            max-height: 300px;
+            max-height: 300px !important;
         }
     }
 
