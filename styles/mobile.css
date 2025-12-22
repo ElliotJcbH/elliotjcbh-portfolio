@@ -11,7 +11,7 @@
     
     #main-container {
         flex-direction: column;
-        padding-inline: 0.25rem;
+        padding-inline: 0;
     }
 
     section {
