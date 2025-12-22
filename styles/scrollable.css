@@ -146,6 +146,13 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: 0.5rem;
+
+            & > p {
+                padding: 0.15rem 0.75rem;
+                /* background-color: var(--accent-color); */
+                background-color: lightblue;
+                border-radius: 100px;
+            }
         }
 
         & .stack-list {
