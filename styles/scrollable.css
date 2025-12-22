@@ -6,6 +6,12 @@
     flex: 1;
 }
 
+#about-checkpoint {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 #scrollable-nav {
     position: sticky;
     top: 0;
