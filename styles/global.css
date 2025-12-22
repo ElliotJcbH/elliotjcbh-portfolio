@@ -50,7 +50,7 @@ h1, h2, h3 {
     font-size: 4rem;
 }
 
-p {
+p, span {
     color: var(--primary-text-color);
     font-family: var(--sans-serif-font), sans-serif;
 }

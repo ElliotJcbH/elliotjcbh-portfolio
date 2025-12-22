@@ -1,6 +1,11 @@
 
 :root {
     --background-color: #EDEDE7;
+
+    --primary-color: black;
+    --secondary-color: #5e5c5c;
+    --accent-color: #c7c7bf;
+
     --primary-text-color: black;
     --secondary-text-color: #5e5c5c;
 

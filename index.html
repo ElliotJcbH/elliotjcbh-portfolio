@@ -84,7 +84,6 @@
                         <p>
                             I already have a few projects under my belt and have gained valuable
                             experience at the cost of hard work and a myriad of mistakes. I'm constantly seeking to improve my skills and expand my knowledge in the ever-evolving field of technology.
-                            I'm excited to see where my passion for software development will take me in the future!
                         </p>
                     </div>
                     <div id="career-container">
@@ -99,6 +98,9 @@
                             <h1>Projects</h1>
                         </div>
                         <!-- <button class="project-card">
+                            <div class="project-card-thumbnail-container">
+                                <img src="public/project-images/portfolio/thumbnail.png" />
+                            </div>
                             <div>
                                 <div class="project-header">
                                     <h1>My Portfolio</h1>
@@ -128,13 +130,40 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M5 12l6 6" /><path d="M5 12l6 -6" /></svg>
                 </button>
             </div> -->
-            <div id="modal-thumbnail-container">
-            </div>
             <div>
-                <h1 id="project-title">Atletik</h1>
+                <div id="modal-thumbnail-container">
+                    <img id="project-thumbnail" src="" />
+                </div>
+                <div id="project-modal-header">
+                    <h1 id="project-modal-title">Atletik</h1>
+                    <div id="project-modal-actions">
+                        <a id="project-link" href="">
+                            Visit
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-external-link"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" /><path d="M11 13l9 -9" /><path d="M15 4h5v5" /></svg>
+                        </a>
+                        <a id="github-link" href="">
+                            Github
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-external-link"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" /><path d="M11 13l9 -9" /><path d="M15 4h5v5" /></svg>
+                        </a>
+                    </div>
+                </div>
+                <div id="project-modal-content">
+                    <div id="project-modal-tags">
+                        <div>
+                            <span id="project-modal-classification"></span>
+                        </div>
+                        <span id="project-modal-date">2025 - Present</span>
+                    </div>
+                    <div id="project-modal-about"></div>
+                    <h2>Purpose</h2>
+                    <h2>Features</h2>
+                    <h2>More Images</h2>
+                </div>
             </div>
             <button id="project-back-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M5 12l6 6" /><path d="M5 12l6 -6" /></svg>
+                <span>Close</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M5 12l6 6" /><path d="M5 12l6 -6" /></svg> -->
             </button>
         </div>
     </div>

@@ -1,4 +1,12 @@
 
+@media (max-width: 500px) {
+
+    .project-card {
+        flex-flow: column nowrap !important;
+    }
+
+}
+
 @media (max-width: 1024px) {
     
     #main-container {

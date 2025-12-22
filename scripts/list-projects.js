@@ -6,6 +6,13 @@ projects.forEach(project => {
     const projectCard = document.createElement('button');
     projectCard.classList.add('project-card');
 
+    const projectCardThumbnailContainer = document.createElement('div');
+    projectCardThumbnailContainer.classList.add('project-card-thumbnail-container');
+    const projectCardImage = document.createElement('img');
+    projectCardImage.src = project.thumbnail;
+    projectCardThumbnailContainer.appendChild(projectCardImage);
+    projectCard.appendChild(projectCardThumbnailContainer);
+
     const contentContainerElement = document.createElement('div');
     projectCard.appendChild(contentContainerElement);
 
@@ -60,20 +67,51 @@ const projectModal = document.querySelector('#project-modal');
 const projectBackButton = document.querySelector('#project-back-button');
 projectBackButton.addEventListener('click', () => closeProjectDetails());
 
+const projectThumbnail = document.querySelector('#project-thumbnail');
+const projectTitle = document.querySelector('#project-modal-title');
+const liveLink = document.querySelector('#project-link');
+const githubLink = document.querySelector('#github-link');
+
+
+const about = document.querySelector('#project-modal-about');
+const projectClassification = document.querySelector('#project-modal-classification');
+
 let lastScrollPosition = 0;
 
 function openProjectDetails(project) {
+
+    about.innerHTML = '';
 
     lastScrollPosition = window.scrollY;
 
     mainContainer.classList.add('hidden');
     projectModal.classList.add('showing');
 
-    mainContainer.style.height = '101vh';
-    mainContainer.style.overflow = 'hidden';
+    projectModal.focus();
 
-    const projectTitle = document.querySelector('#project-title');
+    projectThumbnail.src = project.thumbnail;
     projectTitle.textContent = project.title;
+
+    liveLink.href = project.linkLive;
+    githubLink.href = project.linkGithub;
+
+    if(!project.linkLive || project.linkLive.trim() === "") {
+        liveLink.classList.add('unavailable');
+        liveLink.style.pointerEvents = 'none';  
+    }
+    if(!project.linkGithub || project.linkGithub.trim() === "") {
+        githubLink.classList.add('unavailable');
+        githubLink.style.pointerEvents = 'none';  
+    }
+
+    projectClassification.textContent = project.classification;
+
+    project.about.forEach((paragraph) => {
+        const p = document.createElement('p');
+        p.textContent = paragraph;
+
+        about.appendChild(p);
+    })
 
     const thumbnailContainer = document.querySelector('#modal-thumbnail-container');
 
@@ -84,9 +122,14 @@ function closeProjectDetails() {
     mainContainer.classList.remove('hidden');
     projectModal.classList.remove('showing');
 
+    liveLink.classList.remove('unavailable');
+    githubLink.classList.remove('unavailable');
+
     mainContainer.style.height = '';
     mainContainer.style.overflow = '';
 
-    window.scrollTo(0, lastScrollPosition);
+    setTimeout(() => {
+        projectModal.scrollTo(0, 0);
+    }, 1000)
 
 }
