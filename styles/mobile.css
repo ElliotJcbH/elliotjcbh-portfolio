@@ -61,4 +61,11 @@
         opacity: 1 !important;
     }
 
+     & .carousell {
+
+        & img {
+            max-height: 300px;
+        }
+    }
+
 }
