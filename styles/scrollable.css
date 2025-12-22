@@ -170,6 +170,7 @@
         & .stack-list {
             display: flex;
             flex-flow: row wrap; 
+            align-items: center;
             column-gap: 1rem;
             row-gap: 0.5rem;
             margin-top: 1.25rem;

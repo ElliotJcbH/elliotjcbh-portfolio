@@ -131,6 +131,8 @@ function closeProjectDetails() {
 
     liveLink.classList.remove('unavailable');
     githubLink.classList.remove('unavailable');
+    liveLink.style.pointerEvents = 'all';
+    githubLink.style.pointerEvents = 'all';
 
     mainContainer.style.height = '';
     mainContainer.style.overflow = '';

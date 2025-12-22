@@ -33,7 +33,7 @@ const projects = [
         features: [
             {
                 headline: "Live Scoring",
-                desc: "When viewing the page of a match that is ongoing, users can see the scores update live. This feature was implemented using Supabase Realtime.",
+                desc: "When viewing the page of an ongoing match, users can see the scores update live. This feature was implemented using Supabase Realtime.",
             visuals: [
                 "https://lh3.googleusercontent.com/d/1xCPUuPEO5v7bLjGTWTFhKpU5xHiBNeYc",
                 "https://lh3.googleusercontent.com/d/1jWUTbU1v5Lph9CSMdwZpExCNIW7x8jKo",
@@ -85,7 +85,8 @@ const projects = [
         thumbnail: "",
         stack: ["Svelte", "Javascript", "HTML", "SCSS", "PostgreSQL", "Supabase"],
         about: [
-            "Juria's Garden Hotel is a hotel booking web application that allows users to book rooms, view room details, and manage their bookings."
+            "Juria's Garden Hotel is a hotel booking web application that allows users to book rooms, view room details, and manage their bookings.",
+            "This is the hardest project out of the bunch I've had to do, particularly because of poor decisions I made before and during developing it. For example, I started making it in vanilla HTML, CSS, and JS, but decided to transition to SvelteKit with Typescript. This made it faster to create new components and modules, but at the expense of having to rewrite already existing ones. There was also a pretty critical blunder with the way I structured data with poor normalization and constantly changing it. Everything felt terrible, tiring, and hopeless to try and fix, but nonetheless, I feel as though I learned quite a lot from the mistakes I made."
         ]
     },
     {

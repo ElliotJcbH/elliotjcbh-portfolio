@@ -123,6 +123,7 @@ h1, h2, h3 {
 p, span {
     color: var(--primary-text-color);
     font-family: var(--sans-serif-font), sans-serif;
+    line-height: 1.75rem;
 }
 
 a {

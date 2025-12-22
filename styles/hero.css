@@ -66,6 +66,22 @@ div#main-content {
         margin-bottom: 0.75rem;
     }
 
+    & div {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        & p {
+            color: var(--primary-color);
+        }
+
+        & svg { 
+            color: var(--primary-color);
+            stroke-width: 1.75px;
+        }
+    }
+
 }
 
 div#links {
@@ -76,7 +92,7 @@ div#links {
         display: flex;
         flex-flow: row wrap;
         justify-content: flex-start;
-        gap: 2.5rem;
+        gap: 1.75rem;
         list-style: none;
     }
 
