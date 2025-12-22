@@ -148,18 +148,4 @@ window.addEventListener('popstate', function(event) {
         window.history.pushState({ modalOpen: false }, '', window.location.href);
     }
 
-    // console.log(event.state);
-
-    // console.log('modal open?', window.history.state.modalOpen);
-
-    // if (event.state && event.state.modalOpen) {
-    //     closeProjectDetails();
-
-    //     // To prevent actual navigation, you might need to push the state back
-    //     // so that the current page remains in the history stack,
-    //     // though modern browsers may handle this behavior differently.
-    //     // window.history.pushState({ modalOpen: true }, '', window.location.href);
-    // } else {
-    //     // Handle regular back navigation if needed, or do nothing and let it proceed
-    // }
 });

@@ -1,5 +1,5 @@
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
 
     .project-card {
         flex-flow: column nowrap !important;
@@ -13,6 +13,10 @@
         flex-direction: column;
         gap: 2rem;
         /* padding-inline: 0.25rem; */
+    }
+
+    .project-card-thumbnail-container {
+        height: 200px !important;
     }
 
     section {
