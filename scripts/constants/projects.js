@@ -34,31 +34,39 @@ const projects = [
             {
                 headline: "Live Scoring",
                 desc: "When viewing the page of a match that is ongoing, users can see the scores update live. This feature was implemented using Supabase Realtime.",
-                visuals: ["public/project-images/atletik/atletik-icon.png"]
+            visuals: [
+                "https://lh3.googleusercontent.com/d/1xCPUuPEO5v7bLjGTWTFhKpU5xHiBNeYc",
+                "https://lh3.googleusercontent.com/d/1jWUTbU1v5Lph9CSMdwZpExCNIW7x8jKo",
+                "https://lh3.googleusercontent.com/d/17ucwmFRBzst4VzsNZD5EuNDZvRgYRl_G",
+                "https://lh3.googleusercontent.com/d/17ucwmFRBzst4VzsNZD5EuNDZvRgYRl_G",
+                "https://lh3.googleusercontent.com/d/1DnfWRrvb8HBXr8k6AU9iaduzRK2jwo8u",
+                "https://lh3.googleusercontent.com/d/1V4DCqNon0eKPCi6N5klxmscZl3ilDBN_",
+                "https://lh3.googleusercontent.com/d/1eWCoLFz4_3htd4-O5BBii9tZt0C80PBY",
+            ]
+            }, 
+            {
+                headline: "Group Creation",
+                desc: "Users are free to create three types of groups: Team, Club, and Organizer. Clubs and Organizers require an extra step to be approved by Atletik admins.",
+                visuals: []
             }, 
             {
                 headline: "Event Posts",
-                desc: "",
+                desc: "Users can create posts as long as they have a group. Types of groups have certain limitations as to what kinds of posts they can create: Training, Tournament, Bulletin.",
                 visuals: []
             },
             {
                 headline: "User Profiles",
-                desc: "",
+                desc: "You can view other user's profiles and share your own on other platforms. And if you follow them, matches where they are participating are more likely to show up on the home feed.",
                 visuals: []
             },
-            {
-                headline: "Group Creation",
-                desc: "",
-                visuals: []
-            }, 
             {
                 headline: "Built-In Messaging",
-                desc: "",
+                desc: "This app also has very basic messaging features for private conversations and group chats.",
                 visuals: []
             },
             {
-                headline: "Achievements",
-                desc: "",
+                headline: "Achievements and Participation History",
+                desc: "Player's activity are recorded on their profiles. Getting podium placements and simply participating in tournaments are activities that are viewable on user's profiles.",
                 visuals: []
             },
         ],

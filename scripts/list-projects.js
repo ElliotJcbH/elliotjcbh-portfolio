@@ -1,5 +1,6 @@
 import projects from './constants/projects.js';
 
+const body = document.querySelector('body');
 const projectContainer = document.querySelector('#project-container');
 
 projects.forEach(project => {
@@ -182,12 +183,92 @@ function appendFeatures(project) {
                 const img = document.createElement('img');
                 img.src = visual;
                 carousell.appendChild(img);
+
+                // img.addEventListener('click', () => expandImage(visual));
+                img.addEventListener('click', () => expandImageCarousell(visual, feature.visuals));
             })
 
             featureCard.appendChild(carousell);
         }
 
         featureContainer.appendChild(featureCard);
+    })
+
+}
+
+function expandImage(src) {
+    const dialog = document.createElement('div');
+    dialog.id = 'expanded-image';
+
+    const img = document.createElement('img');
+    img.src = src;
+
+    dialog.appendChild(img);
+    body.appendChild(dialog);
+
+    // body.style.overflow = 'hidden';
+
+    dialog.focus();
+}
+
+function expandImageCarousell(src, allSrcs) {
+
+    const dialog = document.createElement('div');
+    dialog.id = 'expanded-image';
+
+    let selectedImageIndex = allSrcs.findIndex(x => x === src);
+
+    const img = document.createElement('img');
+    img.src = src;
+    const pager = document.createElement('span');
+    pager.id = 'expanded-image-pager';
+    pager.textContent = `${selectedImageIndex + 1} / ${allSrcs.length}`;
+
+
+    const close = document.createElement('button');
+    close.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>`;
+    close.id = 'expanded-image-close-button';
+    const leftButton = document.createElement('button');
+    leftButton.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M5 12l6 6" /><path d="M5 12l6 -6" /></svg>`;
+    leftButton.id = 'expanded-image-left-button';
+    const rightButton = document.createElement('button');
+    rightButton.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>`;
+    rightButton.id = 'expanded-image-right-button';
+    const bottom = document.createElement('div');
+    bottom.id = 'expanded-image-bottom';
+
+    bottom.appendChild(leftButton);
+    bottom.appendChild(pager);
+    bottom.appendChild(rightButton);
+    bottom.appendChild(close);
+    dialog.appendChild(img);
+    dialog.appendChild(bottom);
+    body.appendChild(dialog);
+
+    dialog.focus();
+
+    leftButton.addEventListener('click', (e) => {
+        e.stopPropagation();
+
+        selectedImageIndex = selectedImageIndex <= 0 ? allSrcs.length - 1 : selectedImageIndex - 1;
+        img.src = allSrcs[selectedImageIndex];
+        pager.textContent = `${selectedImageIndex + 1} / ${allSrcs.length}`;
+    })
+
+    rightButton.addEventListener('click', (e) => {
+        e.stopPropagation(); 
+
+        selectedImageIndex = selectedImageIndex >= allSrcs.length - 1 ? 0 : selectedImageIndex + 1;
+        img.src = allSrcs[selectedImageIndex];
+        pager.textContent = `${selectedImageIndex + 1} / ${allSrcs.length}`;
+    })
+
+    close.addEventListener('click', () => {
+        dialog.remove();
+    })
+
+    dialog.addEventListener('click', () => {
+        dialog.remove();
     })
 
 }

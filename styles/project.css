@@ -145,7 +145,7 @@
         & #feature-container {
 
             & .feature-card {
-                margin-block: 2rem;
+                margin-block: 2.5rem;
                 list-style-type: none;
             }
 
@@ -159,17 +159,29 @@
                 margin-bottom: 0.5rem;
             }
 
-            & .carousell {
-                margin-top: 1rem;
+           & .carousell {
+                margin-top: 0.75rem;
                 display: flex;
                 flex-flow: row nowrap;
-                gap: 2rem;
-                height: 300px;
+                gap: 1rem;
                 overflow: hidden;
+                overflow-x: scroll;
+                padding: 1.10rem 1.15rem;
+                border-radius: 10px;
+                background-color: var(--accent-color);
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+                -ms-overflow-style: none;
+                scrollbar-width: none; 
 
                 & img {
-                    height: 100%;
-                    border-radius: 10px;
+                    height: auto;
+                    width: auto;
+                    max-height: 400px;
+                    border-radius: 8px;
+                    object-fit: contain;
                 }
             }
             
