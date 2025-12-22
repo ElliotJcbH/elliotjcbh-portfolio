@@ -131,7 +131,8 @@
             height: 100px;
             aspect-ratio: 16 / 9;
             border: 1px solid var(--accent-color);
-            background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);           
+            /* background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);            */
+            background: linear-gradient(159deg, rgba(30,144,255,1) 0%, rgba(153,186,221,1) 100%);
             border-radius: 5px;
             overflow: hidden;
 

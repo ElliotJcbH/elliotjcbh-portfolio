@@ -40,6 +40,8 @@ div#main-content {
     & h1 {
         font-size: 3.5rem;
         background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+        background: rgb(30,144,255);
+        background: linear-gradient(159deg, rgba(30,144,255,1) 0%, rgba(153,186,221,1) 100%);
         font-weight: 500;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;

@@ -52,7 +52,7 @@
         position: relative;
         width: 100%;
         aspect-ratio: 16 / 9;
-        background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+        background: linear-gradient(159deg, rgba(30,144,255,1) 0%, rgba(153,186,221,1) 100%);
         border-radius: 10px;
         margin-block: 0;
         overflow: hidden;
