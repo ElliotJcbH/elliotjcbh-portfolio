@@ -76,9 +76,14 @@ const githubLink = document.querySelector('#github-link');
 const about = document.querySelector('#project-modal-about');
 const projectClassification = document.querySelector('#project-modal-classification');
 
+window.history.replaceState({ modalOpen: false }, '', window.location.href);
+
 let lastScrollPosition = 0;
 
 function openProjectDetails(project) {
+
+    window.history.pushState({ modalOpen: true }, '', window.location.href);
+    console.log(window.history);
 
     about.innerHTML = '';
 
@@ -133,3 +138,19 @@ function closeProjectDetails() {
     }, 1000)
 
 }
+
+window.addEventListener('popstate', function(event) {
+
+    console.log(event.state);
+
+    if (event.state && event.state.modalOpen) {
+        closeProjectDetails();
+
+        // To prevent actual navigation, you might need to push the state back
+        // so that the current page remains in the history stack,
+        // though modern browsers may handle this behavior differently.
+        // window.history.pushState({ modalOpen: true }, '', window.location.href);
+    } else {
+        // Handle regular back navigation if needed, or do nothing and let it proceed
+    }
+});
