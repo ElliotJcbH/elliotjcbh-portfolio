@@ -31,6 +31,10 @@
         transition: all 0.75s ease-in-out;
     }
 
+    & p {
+        line-height: 1.75rem;
+    }
+
     & .wrapper {
         max-width: 900px;
         min-height: 100dvh;
@@ -126,16 +130,49 @@
         }
 
         & #project-modal-about {
-            margin-top: 1.25rem;
-            
-            & p {
-                line-height: 1.75rem;
-            }
+            margin-top: 1.5rem;
 
             & p:not(:nth-child(1)) {
-                margin-top: 1rem;
+                margin-top: 0.75rem;
             }
 
+        }
+
+        & .content-container {
+            /* padding-left: 1rem; */
+        }
+
+        & #feature-container {
+
+            & .feature-card {
+                margin-block: 2rem;
+                list-style-type: none;
+            }
+
+            & .feature-card:nth-of-type(1) {
+                margin-top: 1.5rem !important;
+            }
+
+            & h3 {
+                font-size: 1rem;
+                font-weight: 500;
+                margin-bottom: 0.5rem;
+            }
+
+            & .carousell {
+                margin-top: 1rem;
+                display: flex;
+                flex-flow: row nowrap;
+                gap: 2rem;
+                height: 300px;
+                overflow: hidden;
+
+                & img {
+                    height: 100%;
+                    border-radius: 10px;
+                }
+            }
+            
         }
     }
 
@@ -149,7 +186,7 @@
 
     & h2 {
         font-size: 1.75rem;
-        margin-top: 2rem;
+        margin-top: 2.25rem;
     }
 
     & button {

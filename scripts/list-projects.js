@@ -72,10 +72,11 @@ const projectTitle = document.querySelector('#project-modal-title');
 const liveLink = document.querySelector('#project-link');
 const githubLink = document.querySelector('#github-link');
 
-
-const about = document.querySelector('#project-modal-about');
 const projectDate = document.querySelector('#project-modal-date');
 const projectClassification = document.querySelector('#project-modal-classification');
+const about = document.querySelector('#project-modal-about');
+
+const featureContainer = document.querySelector('#feature-container');
 
 // window.history.replaceState({ modalOpen: false }, '', window.location.href);
 
@@ -89,6 +90,7 @@ function openProjectDetails(project) {
     window.history.pushState({ modalOpen: true }, '', window.location.href);
 
     about.innerHTML = '';
+    featureContainer.innerHTML = '';
 
     lastScrollPosition = window.scrollY;
 
@@ -115,14 +117,9 @@ function openProjectDetails(project) {
     projectClassification.textContent = project.classification;
     projectDate.textContent = project.date;
 
-    project.about.forEach((paragraph) => {
-        const p = document.createElement('p');
-        p.textContent = paragraph;
-
-        about.appendChild(p);
-    })
-
-    const thumbnailContainer = document.querySelector('#modal-thumbnail-container');
+   
+    appendAbout(project);
+    appendFeatures(project);
 
 }
 
@@ -151,3 +148,46 @@ window.addEventListener('popstate', function(event) {
     }
 
 });
+
+function appendAbout(project) {
+
+    project.about.forEach((paragraph) => {
+        const p = document.createElement('p');
+        p.textContent = paragraph;
+
+        about.appendChild(p);
+    })
+
+}
+
+function appendFeatures(project) {
+
+    project.features.forEach((feature) => {
+        const featureCard = document.createElement('li');
+        featureCard.classList.add('feature-card');
+
+        const h3 = document.createElement('h3');
+        h3.textContent = feature.headline;
+        const p = document.createElement('p');
+        p.textContent = feature.desc;
+
+        featureCard.appendChild(h3);
+        featureCard.appendChild(p);
+
+        if(feature.visuals.length > 0) {
+            const carousell = document.createElement('div');
+            carousell.classList.add('carousell');
+
+            feature.visuals.forEach((visual) => {
+                const img = document.createElement('img');
+                img.src = visual;
+                carousell.appendChild(img);
+            })
+
+            featureCard.appendChild(carousell);
+        }
+
+        featureContainer.appendChild(featureCard);
+    })
+
+}

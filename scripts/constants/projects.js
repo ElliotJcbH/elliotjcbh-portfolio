@@ -21,14 +21,52 @@ const projects = [
         title: "Atletik",
         date: "2025 - 2026",
         classification: "Capstone",
-        description: "Atletik is a mobile application with basic social media features built for local sports events and observing game scores live.",
+        description: "Atletik is a mobile application with essential social media features built for local sports events and observing game scores live.",
         thumbnail: "public/project-images/atletik/atletik-icon.png",
         stack: ["React Native", "Expo", "Node", "Typescript", "PostgreSQL", "Supabase"],
         linkLive: "https://atletikadmin.vercel.app/",
         linkGithub: "",
         about: [
-            "Atletik is a mobile application with basic social media features built for local sports events and observing game scores live.",
-            "This project was my very first full-fledged mobile application. I decided to go with React Native because I was way more familiar with JS/TS syntax than native programming languages like Kotlin or Swift. This was built in-collaboration with the Taytay Sports Development Office, who also holds sports events -- which at some point we tested out live scoring with.",
+            "Atletik is a mobile application with essential social media features built for local sports events and observing game scores live.",
+            "This project was my very first fully-fledged mobile application. I decided to go with React Native because I was way more familiar with JS/TS syntax than native programming languages like Kotlin or Swift. This was built in-collaboration with the Taytay Sports Development Office -- who we also tested out live scoring with during one of their events.",
+        ],
+        features: [
+            {
+                headline: "Live Scoring",
+                desc: "When viewing the page of a match that is ongoing, users can see the scores update live. This feature was implemented using Supabase Realtime.",
+                visuals: ["public/project-images/atletik/atletik-icon.png"]
+            }, 
+            {
+                headline: "Event Posts",
+                desc: "",
+                visuals: []
+            },
+            {
+                headline: "User Profiles",
+                desc: "",
+                visuals: []
+            },
+            {
+                headline: "Group Creation",
+                desc: "",
+                visuals: []
+            }, 
+            {
+                headline: "Built-In Messaging",
+                desc: "",
+                visuals: []
+            },
+            {
+                headline: "Achievements",
+                desc: "",
+                visuals: []
+            },
+        ],
+        moreAssets: [
+            {
+                asset: "",
+                caption: "",
+            } 
         ],
     },
     {
