@@ -210,15 +210,16 @@
         position: sticky;
         bottom: 0px;
         cursor: pointer;
-        border-top: 1px solid var(--secondary-text-color);
+        border-top: 1px solid var(--primary-color);
         padding-block: 1rem 1.25rem;
 
         & span {
             font-size: 1.25rem;
+            color: var(--primary-color);
         }
 
         & svg {
-            color: var(--primary-text-color);
+            color: var(--primary-color);
             width: 24px;
             height: 24px;
             stroke-width: 1.75px;

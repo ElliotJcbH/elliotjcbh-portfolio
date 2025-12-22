@@ -20,7 +20,7 @@
     align-items: flex-end;
     justify-content: flex-end;
     padding-block: 1.75rem; 
-    border-bottom: 1px solid var(--secondary-text-color);
+    border-bottom: 1px solid var(--primary-color);
     background-color: var(--background-color);
     z-index: 999;
 
