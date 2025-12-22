@@ -4,6 +4,7 @@ console.log('projects loaded');
 const projects = [
      {
         title: "My Portfolio",
+        date: "2025 - Present",
         classification: "Personal",
         description: "My personal portfolio which you are viewing right now! Built to showcase my skills, experiences, and projects.",
         thumbnail: "public/project-images/portfolio/thumbnail.png",
@@ -18,6 +19,7 @@ const projects = [
     },
     {
         title: "Atletik",
+        date: "2025 - 2026",
         classification: "Capstone",
         description: "Atletik is a mobile application with basic social media features built for local sports events and observing game scores live.",
         thumbnail: "public/project-images/atletik/atletik-icon.png",
@@ -31,6 +33,7 @@ const projects = [
     },
     {
         title: "Juria's Garden Hotel",
+        date: "2024-2025",
         classification: "School Project",
         description: "Juria's Garden Hotel is a hotel booking web application that allows users to book rooms, view room details, and manage their bookings.",
         thumbnail: "",
@@ -41,6 +44,7 @@ const projects = [
     },
     {
         title: "Luxuria",
+        date: "2023",
         classification: "School Project",
         description: "Luxuria is an e-commerce web application specifically made for jewelry products. This web application was our first attempt at creating a fully operational CRUD.",
         thumbnail: "",
@@ -51,6 +55,7 @@ const projects = [
     },
     {
         title: "Katapusan",
+        date: "2025",
         classification: "Collaborative",
         description: "Katapusan is an interactive short film heavily based on the interactivity features of works such as Black Mirror: Bandersnatch. Users can make choices that affect the storyline and outcome of the film.",
         thumbnail: "",

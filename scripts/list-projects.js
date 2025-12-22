@@ -74,6 +74,7 @@ const githubLink = document.querySelector('#github-link');
 
 
 const about = document.querySelector('#project-modal-about');
+const projectDate = document.querySelector('#project-modal-date');
 const projectClassification = document.querySelector('#project-modal-classification');
 
 // window.history.replaceState({ modalOpen: false }, '', window.location.href);
@@ -112,6 +113,7 @@ function openProjectDetails(project) {
     }
 
     projectClassification.textContent = project.classification;
+    projectDate.textContent = project.date;
 
     project.about.forEach((paragraph) => {
         const p = document.createElement('p');
