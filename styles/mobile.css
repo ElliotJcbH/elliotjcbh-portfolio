@@ -40,9 +40,9 @@
     }
 
     .project-header {
-        /* flex-flow: column nowrap !important; */
-        /* justify-content: center !important; */
-        /* align-items: flex-start !important; */
+        flex-flow: column nowrap !important;
+        justify-content: center !important;
+        align-items: flex-start !important;
         gap: 0.5rem;
 
         & h1 {
