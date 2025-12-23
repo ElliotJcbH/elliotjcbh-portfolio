@@ -1,3 +1,4 @@
+@import url('vars.css');
 
 #project-modal {
     position: fixed;
@@ -17,6 +18,7 @@
     overflow-y: auto;
     overscroll-behavior: contain;
     transform: translateY(20px);
+    border: none !important;
 
     /* Hide scrollbar for Chrome, Safari and Opera */
     &::-webkit-scrollbar {
@@ -28,7 +30,7 @@
     scrollbar-width: none;  /* Firefox */
     
     &, & * {
-        transition: all 0.75s ease-in-out;
+        transition: all 0.5s ease-in-out;
     }
 
     & p {
@@ -52,7 +54,8 @@
         position: relative;
         width: 100%;
         aspect-ratio: 16 / 9;
-        background: linear-gradient(159deg, rgba(30,144,255,1) 0%, rgba(153,186,221,1) 100%);
+        background: var(--gradient-flow);
+        animation: var(--gradient-flow-animation);
         border-radius: 10px;
         margin-block: 0;
         overflow: hidden;

@@ -1,3 +1,5 @@
+@import url('vars.css');
+
 
 #scroll-container {
     position: relative;
@@ -131,8 +133,8 @@
             height: 100px;
             aspect-ratio: 16 / 9;
             border: 1px solid var(--accent-color);
-            /* background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);            */
-            background: linear-gradient(159deg, rgba(30,144,255,1) 0%, rgba(153,186,221,1) 100%);
+            background: var(--gradient-flow);
+            animation: var(--gradient-flow-animation);            
             border-radius: 5px;
             overflow: hidden;
 
@@ -164,6 +166,8 @@
                 padding: 0.15rem 0.75rem;
                 /* background-color: var(--accent-color); */
                 background-color: lightblue;
+                /* background-color: dodgerblue; */
+                /* color: var(--background-color); */
                 border-radius: 100px;
             }
         }
@@ -189,5 +193,5 @@
 }
 
 #disclaimer { 
-    margin-block: 6rem 3rem;
+    margin-block: 6rem 1rem;
 }

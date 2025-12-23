@@ -1,3 +1,4 @@
+@import url(keyframes.css);
 
 :root {
     --background-color: #EDEDE7;
@@ -5,6 +6,7 @@
     --primary-color: #3D352C;    
     --secondary-color: #5e5c5c;
     --accent-color: #E5D9C3;
+    /* --accent-color: #E5D9C3; */
 
     --primary-text-color: black;
     --secondary-text-color: #5e5c5c;
@@ -15,4 +17,10 @@
 
     --serif-font: "Playfair Display", serif;
     --sans-serif-font: "General Sans", sans-serif;
+
+
+    /*animations*/
+    --gradient-flow: linear-gradient(159deg, rgba(30,144,255,1) 0%, rgba(153,186,221,1) 50%, rgba(30,144,255,1) 100%);
+    --gradient-flow-animation: flowing-text 5s ease-in-out infinite;
+
 }

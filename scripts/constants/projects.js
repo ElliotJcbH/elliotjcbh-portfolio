@@ -23,7 +23,7 @@ const projects = [
         classification: "Capstone",
         description: "Atletik is a mobile application with essential social media features built for local sports events and observing game scores live.",
         thumbnail: "public/project-images/atletik/atletik-icon.png",
-        stack: ["React Native", "Expo", "Node", "Typescript", "PostgreSQL", "Supabase"],
+        stack: ["React Native", "Expo", "Typescript", "PostgreSQL", "Supabase", "Real Time"],
         linkLive: "https://atletikadmin.vercel.app/",
         linkGithub: "",
         about: [
@@ -60,8 +60,8 @@ const projects = [
                 visuals: []
             },
             {
-                headline: "Built-In Messaging",
-                desc: "This app also has very basic messaging features for private conversations and group chats.",
+                headline: "Real Time Messaging",
+                desc: "This app also has very basic messaging features for private conversations and group chats. I was opposed to adding this feature because I thought it would not be viable (financially or performance wise) if the application were to be deployed, but as it was requested by my Capstone panelists. Alas, I added it in anyway.",
                 visuals: []
             },
             {
