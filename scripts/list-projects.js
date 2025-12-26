@@ -1,4 +1,5 @@
 import projects from './constants/projects.js';
+import ImageMap from './constants/image-map.js';
 
 const body = document.querySelector('body');
 const projectContainer = document.querySelector('#project-container');
@@ -76,6 +77,7 @@ const githubLink = document.querySelector('#github-link');
 const projectDate = document.querySelector('#project-modal-date');
 const projectClassification = document.querySelector('#project-modal-classification');
 const about = document.querySelector('#project-modal-about');
+const modalStackList = document.querySelector('#project-modal-stack-list');
 
 const featureContainer = document.querySelector('#feature-container');
 
@@ -118,7 +120,7 @@ function openProjectDetails(project) {
     projectClassification.textContent = project.classification;
     projectDate.textContent = project.date;
 
-   
+    appendStackList(project);
     appendAbout(project);
     appendFeatures(project);
 
@@ -159,6 +161,37 @@ function appendAbout(project) {
         p.textContent = paragraph;
 
         about.appendChild(p);
+    })
+
+}
+
+function appendStackList(project) {
+    
+    modalStackList.innerHTML = '';
+
+    project.stack.forEach((tech, index) => {
+        const div = document.createElement('div');
+        div.classList.add('tech-container');
+
+        const img = document.createElement('img');
+        const techName = tech.replaceAll(' ', '').toLowerCase();
+        const newSrc = ImageMap[techName];
+        img.src = !newSrc ? ImageMap.unknown : ImageMap[techName];
+
+        const p = document.createElement('p');
+        p.textContent = tech;
+
+        div.appendChild(img);
+        div.appendChild(p);
+
+        modalStackList.appendChild(div);
+
+        if(index < project.stack.length - 1) {
+            const separator = document.createElement('span');
+            separator.classList.add('stack-divider');
+            separator.textContent = '-';
+            modalStackList.appendChild(separator);
+        }
     })
 
 }

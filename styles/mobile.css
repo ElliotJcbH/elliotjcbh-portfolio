@@ -12,16 +12,11 @@
     #main-container {
         flex-direction: column;
         gap: 0rem;
-        /* padding-inline: 0.25rem; */
     }
 
     .project-card-thumbnail-container {
         height: 200px !important;
     }
-
-    /* .project-modal-title {
-        font-size: 2rem !important;
-    } */
 
     section {
         max-width: 100%;
@@ -78,6 +73,26 @@
         & img {
             max-height: 300px !important;
         }
+    }
+
+    & #project-modal-stack-list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 3rem;
+        margin-top: 3rem;
+        max-width: 80%;
+        margin-inline: auto;
+
+        & div {
+            flex: 1;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+        }
+
     }
 
 }
